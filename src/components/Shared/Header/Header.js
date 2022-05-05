@@ -1,49 +1,46 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
-import logo from '../../../Images/logo.png'
-
-// import './Header.css'
-
-
-import { Link } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
+import auth from '../../../firebase.init';
+// import logo from '../../../images/logo.png'
 
 
 const Header = () => {
-   
+    const [user] = useAuthState(auth);
+    const handleSignOut = () =>{
+        signOut(auth);
+    }
     return (
-        <div>
-            <Navbar sticky="top" bg="dark" variant="dark" collapseOnSelect expand="lg">
-                <Container>
-                    <Navbar.Brand  to="/home/#top">
-                        <img
-                            src={logo}
-                            width="170"
-                            height="170"
-                            className="d-inline-block align-top"
-                            alt="React Bootstrap logo"
-                        />
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav" className='ms-5'>
-                        <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/appointment">Upcommig Trips</Nav.Link>
-                            <Nav.Link as={Link} to="/about">About Me</Nav.Link>
-                        </Nav>
-                        <Nav>
-                            {/* {user.email ?
-                                <Button onClick={handleSignOut} variant='light'>Sign-Out</Button> :
-                                <Nav.Link as={Link} to="/signin">Sign-In</Nav.Link>
-                            }
-                            {user.displayName &&
-                                <Navbar.Text className='ms-2'>
-                                    Signed in as: <a href="#">{user.displayName}</a>
-                                </Navbar.Text>
-                            } */}
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
+        <>
+        <Navbar collapseOnSelect expand="lg" sticky='top' bg="black" variant="dark">
+            <Container>
+               {/*  <Navbar.Brand as={Link} to="/">
+                    <img height={30} src={logo} alt="" />
+                </Navbar.Brand> */}
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="home#home">Home</Nav.Link>
+                        <Nav.Link href="home#experts">Experts</Nav.Link>
+                       
+                    </Nav>
+                    <Nav>
+                        <Nav.Link as={Link} to="about">About</Nav.Link>
+                        
+                        {
+                            user ?
+                                <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button>
+                            :
+                            <Nav.Link as={Link} to="signin">
+                            Sign In
+                        </Nav.Link>}
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    </>
     );
 };
 
