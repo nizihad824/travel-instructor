@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
-import useServices from '../../hooks/useServices';
+import useServices from '../../../hooks/useServices';
 
-const SingleService = () => {
+
+const ServiceDetail = () => {
     const [services] = useServices()
     const [selectedService, setSelectedService] = useState({})
-    const { sID: serviceId } = useParams()
+    const {  serviceId } = useParams()
     useEffect(() => {
         const selectedOne = services?.filter(serv => serv?.id == serviceId)
         setSelectedService(selectedOne[0])
@@ -36,4 +37,4 @@ const SingleService = () => {
     );
 };
 
-export default SingleService;
+export default  ServiceDetail;
