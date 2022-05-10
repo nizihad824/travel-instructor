@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "name": "Cinque  terra",
+      "description": "Pisa.",
+      "price": 250,
+      "img": "https://i.ibb.co/RYTcn18/card-Ct-Scan.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Venice",
+      "description": "Magnetic resonance imaging is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body. MRI scanners use strong magnetic fields, magnetic field gradients, and radio waves to generate images of the organs in the body.",
+      "price": 160,
+      "img": " https://i.ibb.co/nC1Qn3P/cinque-terre.jpg"
+    },
+   
+
+
+    {
+      "id": 3,
+      "name": "Palmero",
+      "description": "An X-ray, or, much less commonly, X-radiation, is a penetrating form of high-energy electromagnetic radiation. Most X-rays have a wavelength ranging from 10 picometers to 10 nanometers, corresponding to frequencies in the range 30 petahertz to 30 exahertz and energies in the range 124 eV to 124 keV. ",
+      "price": 100,
+      "img": "https://i.ibb.co/R9PpLyZ/rome.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Rome",
+      "description": "jksdfhskd.",
+      "price": 80,
+      "img": "https://i.ibb.co/j5TgyDT/venice.jpg"
+    },
+    {
+      "id": 5,
+      "name": "ROme",
+      "description": " sdjahfkjlasdfhnksjadfbnlksjdhgfnlkxyvj hn",
+      "price": 105,
+      "img": "https://i.ibb.co/j5TgyDT/venice.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Rome",
+      "description": "kfjhsdabnfkjsadfbc vaskldjhfasijdf fjuhdhflksdjxcfh bsajdf hsdjkcvnh  ",
+      "price": 180,
+      "img": "https://i.ibb.co/j5TgyDT/venice.jpg"
+    }
+  ]
