@@ -1,7 +1,7 @@
 
 import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useRef } from 'react';
-import { Form} from 'react-bootstrap';
+import { Button, Col, Form, Row} from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
@@ -63,10 +63,21 @@ import 'react-toastify/dist/ReactToastify.css';
     
 
     return (
-        <div>
-           <div className='container w-50 mx-auto'>
-            <h2 className='text-primary text-center mt-2'>Please SignIn</h2>
-            <Form onSubmit={handleSubmit}>
+        <div className='container m5-1'>
+             <Row>
+                <div className='bg-primary p-2 text-white '>
+                    <h3>Please SignIn</h3>
+                </div>
+            </Row>
+            
+             
+            <Row className='shadow-lg p-3 mb-5 bg-body rounded'>
+            <Col xs={12} md={6}>
+                    <img style={{ maxHeight: '500px' }} className='img-fluid' src="https://i.ibb.co/QH968VC/3094352.jpg" alt="" />
+                </Col>
+                <Col xs={12} md={6}>
+                    <div className='mb-3'>
+                    <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
@@ -76,20 +87,29 @@ import 'react-toastify/dist/ReactToastify.css';
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
                
-                <button className='bt btn-primary' variant="primary" type="submit">
+                <Button className='bt btn-primary' variant="primary" type="submit">
                     SignIn
-                </button>
+                </Button>
             </Form>
             {errorElement}
-            <p>New with ME? <Link to="/register" className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
-            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <p>New with ME? <Link to="/signup" className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
+            <p>Forget Password? <Button className='btn btn-link text-white pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Button> </p>
           
             <ToastContainer/>
+                        
+                    </div>
+                
+                </Col>
+
+
+            </Row>
+           
+           
             
         </div>
        
 
-        </div>
+       
     );
 };
 
