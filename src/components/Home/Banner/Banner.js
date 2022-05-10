@@ -3,18 +3,20 @@ import { Carousel } from 'react-bootstrap';
 import banner1 from '../../../Images/Banner/banner1.jpg'
 import banner2 from '../../../Images/Banner/banner2.jpg'
 import banner3 from '../../../Images/Banner/banner3.jpg'
+import './Banner.css'
 
 const Banner = () => {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-      };
-    return (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+        
+          className="d-block w-100 max-height"
           src={banner1}
           alt="First slide"
         />
@@ -25,7 +27,7 @@ const Banner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 max-height"
           src={banner2}
           alt="Second slide"
         />
@@ -37,7 +39,7 @@ const Banner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 max-height"
           src={banner3}
           alt="Third slide"
         />
@@ -50,7 +52,7 @@ const Banner = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    );
+  );
 };
 
 export default Banner;

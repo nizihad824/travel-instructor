@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+import useServices from '../../../hooks/useServices';
 import Service from '../Home/Service/Service';
 
 const Services = () => {
-    const [services, setServices] = useState([]);
+    
+    const [services] = useServices()
 
-    useEffect( ()=>{
-        fetch('services.json')
-        .then(res => res.json())
-        .then(data => setServices(data));
-    }, [])
+   
     return (
-        <div className='container mt-1 mb-3'>
+        <div style={{border:"3px solid red"}} className='container mt-5 mb-3'>
         <Row className='bg p-2 text-white mb-3'>
             <h3>We provide the following services</h3>
         </Row>
