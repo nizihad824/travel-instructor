@@ -2,7 +2,7 @@
 import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useRef } from 'react';
 import { Button, Col, Form, Row} from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
@@ -35,6 +35,7 @@ import 'react-toastify/dist/ReactToastify.css';
         const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password);
     }
+    const [signInWithGoogle, userG, loadingG, errorG] = useSignInWithGoogle(auth);
 
     const navigateRegister = event => {
         navigate('/signUp');
@@ -92,8 +93,13 @@ import 'react-toastify/dist/ReactToastify.css';
                 </Button>
             </Form>
             {errorElement}
+            <div className='d-inline '>
+                        <button onClick={() => signInWithGoogle()}className='btn btn-outline-success'>
+                            <i className="fab fa-google me-1" ></i>Sign-In Using Google</button>
+                    </div>
             <p>New with ME? <Link to="/signup" className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
             <p>Forget Password? <Button className='btn btn-link text-white pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Button> </p>
+
           
             <ToastContainer/>
                         
