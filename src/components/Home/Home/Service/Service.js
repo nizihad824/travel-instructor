@@ -1,6 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-// import './Service.css'
+import { Button, Card, Col } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
+import './Service.css'
 
 const Service = ({service}) => {
     const {id,name, img, description, price} = service;
@@ -12,12 +13,25 @@ const Service = ({service}) => {
 
     return (
         <div className='service'>
-            <img className='w-100' src={img} alt="" />
-            <h2>{name}</h2>
-            <p>Price: {price}</p>  
-            <p>
-            <small>{description}</small></p>
-            <button onClick={() => navigateToServiceDetail(id)} className='btn btn-primary'>Book: {name}</button>
+          
+             <Col>
+                <Card className='card-animation'>
+                    <Card.Img className='img-fixed-size' variant="top" src={img} />
+                    <Card.Body>
+                        <Card.Title>{name}</Card.Title>
+                        <Card.Text>
+                            {description.substr(0, 200)}
+                        </Card.Text>
+                        <Card.Text>
+                            Cost: {price}€
+                        </Card.Text>
+                        <Link to={`/service/${id}`}>
+                            <Button onClick={() => navigateToServiceDetail(id)} variant='outline-success'>Book: {name}</Button>
+                        </Link>
+
+                    </Card.Body>
+                </Card>
+            </Col>
         </div>
     );
 };
