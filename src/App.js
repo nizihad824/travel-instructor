@@ -7,6 +7,7 @@ import ServiceDetail from './components/Home/ServiceDetail/ServiceDetail';
 import RequireAuth from './components/Login/RequireAuth/RequireAuth';
 import SignIn from './components/Login/SignIn/SignIn';
 import SignUp from './components/Login/SignUp/SignUp';
+import Footer from './components/Shared/Footer/Footer';
 
 
 import Header from './components/Shared/Header/Header';
@@ -36,6 +37,7 @@ function App() {
      
 
      </Routes>
+     <Footer></Footer>
     </div>
   );
 }
