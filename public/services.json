@@ -1,15 +1,15 @@
 [
     {
       "id": 1,
-      "name": "Cinque  terra",
-      "description": "Pisa.",
+      "name": "Cinque Terrea",
+      "description": "Cinque Terre is a string of centuries-old seaside villages on the rugged Italian Riviera coastline. In each of the 5 towns, colorful houses and vineyards cling to steep terraces, harbors are filled with fishing",
       "price": 250,
       "img": "https://i.ibb.co/nC1Qn3P/cinque-terre.jpg"
     },
     {
       "id": 2,
       "name": "Venice",
-      "description": "fdjhgkdsfghnlkdsfjhgdsfhg jksdlgfhjsdklfg hhlksdj skldfhg jkdfghkdjsfgbnvh cjkvbndkjsghn jdfghdklfhbndkjcfbnv    jbvdfhg jdf gjhfdhjdkgh dkj",
+      "description": "Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea.",
       "price": 160,
       "img": "https://i.ibb.co/nC1Qn3P/cinque-terre.jpg"
     },
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "name": "Palmero",
-      "description": "kldfghdsjlkfghdsfhgjhhf dskjghfksjghdsk gkfdj hgkjsdfhgkjd ghkdjfhg kdjfhgkldjfhg dkjfgh dskjfgh  ",
+      "description": "Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale  ",
       "price": 100,
       "img": "https://i.ibb.co/R9PpLyZ/rome.jpg"
     },
@@ -32,16 +32,19 @@
     },
     {
       "id": 5,
-      "name": "Rome",
-      "description": " sdjahfkjlasdfhnksjadfbnlksjdhgfnlkxyvj hn",
+      "name": "Capri",
+      "description":"Capri, an island in Italy’s Bay of Naples, is famed for its rugged landscape, upscale hotels and shopping, from designer fashions to limoncello and handmade leather sandals. ",
       "price": 105,
-      "img": "https://i.ibb.co/j5TgyDT/venice.jpg"
+      "img": "https://i.ibb.co/4Tb4TSC/capri.jpg"
     },
     {
       "id": 6,
-      "name": "Rome",
-      "description": "kfjhsdabnfkjsadfbc vaskldjhfasijdf fjuhdhflksdjxcfh bsajdf hsdjkcvnh  ",
+      "name": "Positano",
+      "description": "Positano is a cliffside village on southern Italy's Amalfi Coast. It's a well-known holiday destination with a pebble beachfront and steep, narrow streets lined with boutiques and cafes ",
       "price": 180,
-      "img": "https://i.ibb.co/j5TgyDT/venice.jpg"
+      "img": "https://i.ibb.co/cQj8QPM/positano.jpg"
+
+
+   
     }
   ]
