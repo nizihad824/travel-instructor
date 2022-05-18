@@ -9,16 +9,19 @@ const Services = () => {
 
    
     return (
-        <div style={{border:"3px solid red"}} className='container mt-5 mb-3'>
+        <div /* style={{border:"3px solid red"}} */ className='container-fluid mt-5 mb-3'>
+            <h1 className='text-white bg-black'>Upcomming Trips</h1>
         <Row className='bg p-2 text-white mb-3'>
-            <h3>We provide the following services</h3>
+        
         </Row>
         <Row xs={1} md={2} lg={3} className="g-4 shadow-lg p-3 bg-body rounded">
             {
-                services.map(service => <Service
+            services.map(service => <Service
                     key={service.id}
                     service={service}
-                ></Service>)
+                >
+
+                </Service>)
             }
         </Row>
 

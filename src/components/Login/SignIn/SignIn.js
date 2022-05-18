@@ -40,7 +40,7 @@ import 'react-toastify/dist/ReactToastify.css';
     const navigateRegister = event => {
         navigate('/signUp');
     }
-    if(user){
+    if(userG||user){
         navigate(from, { replace: true });
     }
    
