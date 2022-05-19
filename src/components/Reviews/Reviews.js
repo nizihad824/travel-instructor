@@ -12,7 +12,7 @@ const Reviews = () => {
     // load data
    
     return (
-       <div className='container mt-5'>
+       <div id='reviews' className='container mt-5'>
             <div 
            /*  style={{border:"2px solid red"}}  */
             className="d-flex justify-content-center">

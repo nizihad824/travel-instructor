@@ -1,0 +1,7 @@
+.list-group div:hover{
+    background-color:rgba(255,253,253,.308) ;
+    
+    box-shadow: rgba(255,253,253,.308);
+   
+  cursor: pointer;
+}
