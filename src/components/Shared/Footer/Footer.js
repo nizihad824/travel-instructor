@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='bg-footer p-2'>
             <Row className='w-100'>
                 <Col md={4} sm={8} >
-                    <img  style={{borderRadius :'50px'}} className='img-fluid img' src={logo} alt="" />
+                    <img  style={{borderRadius :'50px'}} className='img-fluid p-5 img' src={logo} alt="" />
                 </Col>
                 <Col md={8} sm={12}>
                    

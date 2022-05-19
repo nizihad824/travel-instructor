@@ -1,0 +1,29 @@
+.card-style:hover{
+    transform: scale(1.04);
+  cursor: pointer;
+  
+}
+.container-card{
+    border: 2px solid whitesmoke;
+    margin-left:10px ;
+    width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:rgb(123, 121, 128) ;
+    
+   
+}
+.card-style img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+}
+
+
+.header-text{
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+    
+    font-size: 50px;
+}
