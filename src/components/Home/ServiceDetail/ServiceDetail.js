@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useServices from '../../../hooks/useServices';
+import './ServiceDetail.css'
 
 
 const ServiceDetail = () => {
@@ -22,8 +23,8 @@ const ServiceDetail = () => {
                             <div className="col-md-4">
                                 <img src={selectedService?.img} className="img-fluid rounded-start" alt="..." />
                             </div>
-                            <div className="col-md-4">
-                                <div className="card-body">
+                            <div className="col-md-4 text mx-5 pt-5">
+                                <div className="card-body ">
                                     <h5 className="card-title">{selectedService?.name}</h5>
                                     <p className="card-text">{selectedService?.description}</p>
                                     <p className="card-text">Price: {selectedService?.price}€</p>

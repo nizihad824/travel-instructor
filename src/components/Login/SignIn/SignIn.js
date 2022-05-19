@@ -7,6 +7,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../../Loading/Loading';
 
 
 
@@ -47,7 +48,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
     if (user) {
      console.log('user', user);  
+
     }
+    if(loading ){
+        return <Loading></Loading>
+    }
+
     if (error) {
         errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }
