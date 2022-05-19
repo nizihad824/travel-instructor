@@ -6,14 +6,14 @@ import './Review.css'
 const Review = (props) => {
     const { name, reviews, img } = props.review;
     return (
-        <div className='container-r mb-5'>
-            <div className='card-style text-white'>
+        <div className='container-r mb-5 ms-5 g-4'>
+            <div className='card-style text-white p-5'>
                 <div className=' d-flex justify-content-center'>
                 <img src={img} alt="" />
                 </div>
                 <h3 className='name d-flex justify-content-center text-white'>{name}</h3>
                 
-                <p>{reviews}</p>
+                <p className='text-black'>{reviews}</p>
                 <div className='d-flex justify-content-center text-warning'>
                 <span>  <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
                <span>  <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>

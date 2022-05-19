@@ -21,8 +21,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Venice</h3>
+          <p>Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals – including the Grand Canal thoroughfare.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,8 +33,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Cinque Terre</h3>
+          <p>Cinque Terre is a string of centuries-old seaside villages on the rugged Italian Riviera coastline. In each of the 5 towns, colorful houses and vineyards cling to steep terraces, </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -45,9 +45,9 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Amalfi Coast</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          The Amalfi Coast is a 50-kilometer stretch of coastline along the southern edge of Italy’s Sorrentine Peninsula, in the Campania region. It’s a popular holiday destination,
           </p>
         </Carousel.Caption>
       </Carousel.Item>

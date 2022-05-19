@@ -20,7 +20,7 @@ const Service = ({service}) => {
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>
-                            {description.substr(0, 200)}
+                            {description.substr(0, 150)}
                         </Card.Text>
                         <Card.Text>
                             Cost: {price}€

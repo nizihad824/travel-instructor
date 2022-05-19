@@ -1,8 +1,8 @@
-/* .img-fixed-size {
-    max-height: 160px;
+.img-fixed-size {
+    max-height: 260px;
     border-bottom: 1px solid #B39CD0;
 }
- */
+
 .card-animation {
     transition: transform 1s;
 }
