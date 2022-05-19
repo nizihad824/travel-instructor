@@ -11,14 +11,14 @@
       "name": "Venice",
       "description": "Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea.",
       "price": 160,
-      "img": "https://i.ibb.co/nC1Qn3P/cinque-terre.jpg"
+      "img": "https://i.ibb.co/XbP25w8/venice.jpg"
     },
    
 
 
     {
       "id": 3,
-      "name": "Palmero",
+      "name": "Rome",
       "description": "Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale  ",
       "price": 100,
       "img": "https://i.ibb.co/R9PpLyZ/rome.jpg"
@@ -28,7 +28,7 @@
       "name": "Rome",
       "description": "Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale ",
       "price": 80,
-      "img": "https://i.ibb.co/j5TgyDT/venice.jpg"
+      "img": "https://i.ibb.co/rpXxypv/palermo.jpg"
     },
     {
       "id": 5,
